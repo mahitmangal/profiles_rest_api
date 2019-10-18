@@ -1,0 +1,68 @@
+vagrant@ubuntu-bionic:/vagrant$ python -m venv ~/env
+vagrant@ubuntu-bionic:/vagrant$ source ~/env/bin/activate
+(env) vagrant@ubuntu-bionic:/vagrant$ pip install -r requirements.txt
+(env) vagrant@ubuntu-bionic:/vagrant$ django-admin startproject profiles_project .
+(env) vagrant@ubuntu-bionic:/vagrant$ python manage.py startapp profiles_api
+
+for testing working fine or not 
+python manage.py runserver 0.0.0.0:8000
+
+run in url type http://127.0.0.1:8000/
+
+models.py 
+settings.py
+admins.py
+
+
+api call
+Use standard http method
+
+GET
+=>Get one or more items
+
+POST 
+=>Post Create an items
+
+PUT
+=>Update an items
+
+Patch
+=>Partially update an items
+
+Delete
+=>Delete an item 
+
+
+API views gives most control over our logic
+
+advantage
+calling other API 'S
+working with local files
+
+
+
+need to use API views
+
+whenever need full control over application logic
+processing files and rendering synchronus response
+calling external API 's
+Acess local files
+
+
+set first API
+
+in views.py in app ie,profiles_api 
+
+configure view url 
+urls.py in project 
+
+
+first check url get api/ its checked in project urls.py there specify include app urls.py so check after api/ matching urls
+ther find a match and provide response
+
+serializer helps to convert data into python object and vice versa.
+
+
+f'Hello {name}!'
+insert name into string
+
