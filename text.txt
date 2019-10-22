@@ -66,3 +66,5 @@ serializer helps to convert data into python object and vice versa.
 f'Hello {name}!'
 insert name into string
 
+
+initially add 4 methods data into views.py
