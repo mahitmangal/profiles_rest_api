@@ -68,3 +68,64 @@ insert name into string
 
 
 initially add 4 methods data into views.py
+
+ git config user.name "Mahit"   setting user for current repository
+ git config user.name   checking current username 
+ git diff returns changes line by line instead of listing files which are changed
+
+
+ view sets 
+ ->maps to common api object actions
+ ->List 
+
+ getting a list of object
+
+ -> Create 
+
+ creating new objects
+
+ ->retrive 
+ getting new objects
+
+ -> update
+ updating an object
+
+ ->partial_update 
+
+ update part of an object 
+
+ -> destroy 
+
+ destroy / Delete an object
+
+
+ Useful for standard db operations 
+fastest way to make db interface 
+
+
+when to use viewsets 
+
+simple CRUD operations 
+
+simple API for manage predefined api object 
+
+http method support particular end points 
+
+
+from django.urls import path, include here include use include list of urls
+
+router.register('hello-viewset', views.HelloViewSet, base_name='hello-viewset')
+first name of viewset which is access through urlname.
+third parameter retrives data url retrive function in django 
+
+
+path('',include(router.urls)),
+
+helps to include all of the urls  by using '' 
+
+
+
+
+
+
+
